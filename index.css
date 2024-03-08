@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full-page {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url("pic/bgi.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 30px;
+    padding-top: 50px;
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a translucent white background */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    position: fixed;
+    margin-top: 10px;
+    z-index: 999;
+}
+
+.logo a {
+    text-decoration: none;
+    color: orangered;
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: 'Helvetica', sans-serif; /* Change the font to a more modern one */
+}
+
+.logo a:hover {
+    color: #ff6347;
+}
+
+nav {
+    flex: 1;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 60px;
+    margin-top: 17px;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: 'Arial', sans-serif; /* Change the font to a more standard one */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ff6347;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+

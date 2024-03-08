@@ -1,0 +1,178 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serief;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background: url(G1.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.img-box
+{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(../gimage/Bailur-Parashurama-Theme-Park.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.img-box:nth-child(2)
+{
+    background: url(../gimage/karkala-marigudi-temple.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box:nth-child(3)
+{
+    background: url(../gimage/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box:nth-child(4)
+{
+    background: url(../gimage/WhatsApp-Image-2022-09-03-at-2.56.08-AM.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box:nth-child(5)
+{
+    background: url(../gimage/TMC-Karkala.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box:nth-child(6)
+{
+    background: url(../gimage/manasa1-768x315.JPEG);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box:nth-child(7)
+{
+    background: url(../gimage//WhatsApp-Image-2022-09-03-at-2.56.08-AM.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box:nth-child(8)
+{
+    background: url(../gimage/TMC-Karkala.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box:nth-child(9)
+{
+    background: url(../gimage/accident-nelliakru-123-e1670642433567-768x311.JPEG);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box:nth-child(10)
+{
+    background: url(../gimage/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box h3
+{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s,opacity 0.5s;
+
+}
+.img-box:hover
+{
+    width: 300px;
+    cursor: pointer;
+}
+.img-box:hover h3
+{
+    opacity: 1;
+    bottom: 25px;
+
+}
+.navigation-bar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 30px;
+    padding-top: 50px;
+    background: url(G1.jpg);
+    
+
+}
+.logo
+{
+    position: fixed;
+    margin-top: 10px;
+
+}
+.logo a
+{
+    text-decoration: none;
+    color: orangered;
+    font-size: 30px;
+}
+nav
+{
+    flex: 1;
+    position: fixed;
+    right: 0;
+
+}
+nav ul
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 90px;
+    margin-top: 1px;
+
+
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    font-family: sans-serief;
+}
+
+  
+
+
+
+
+
+

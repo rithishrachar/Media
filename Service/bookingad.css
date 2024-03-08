@@ -1,0 +1,169 @@
+/* Reset Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-image: url(../pic/advertisement.jpg);
+    margin: 0;
+    padding: 0;
+  }
+
+/* General Styles */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="file"]:focus {
+    border-color: #666;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #3e8e41;
+}
+
+/* Column Styles */
+
+.column {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.column .input-box {
+    margin-bottom: 10px;
+}
+
+/* Payment Mode Styles */
+
+.payment-mode {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.payment-mode div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment-mode label {
+    margin-right: 10px;
+}
+
+.payment-mode input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.payment-mode input[type="radio"]:disabled {
+    cursor: not-allowed;
+}
+unavailable-message {
+    display: none;
+    margin-left: 10px;
+    color: red;
+}
+
+ input[type="radio"][disabled] + label + .unavailable-message {
+    display: inline;
+}
+
+/* Vertical Line Styles */
+
+.column:after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    right: -25px;
+}
+
+/* Additional Styles */
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    /* background-color: #4CAF50; */
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none; /* Add this line to hide the element */
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    /* border: 2px solid #4CAF50; */
+    z-index: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none; /* Add this line to hide the element */
+}
+
