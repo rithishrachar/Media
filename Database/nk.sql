@@ -53,10 +53,7 @@ CREATE TABLE `advertisements` (
 -- Dumping data for table `advertisements`
 --
 
-INSERT INTO `advertisements` (`no`, `name`, `email`, `number`, `title`, `artical`, `file`, `duration`, `amount`, `payment_mode`, `created_at`, `remaining_days`, `expiry_date`, `payment_status`, `emp_id`, `bill`, `task_type`, `work_status`, `invoice_number`) VALUES
-(99, 'User', 'user@gmail.com', '8548034260', 'Commercial', 'congratulations ', 'n1.jpeg', '1 MONTH', '2000', 'CARD', '2023-07-05 09:42:01.315385', 31, '2023-08-05', 'Successful', 0, '', 'advertisement', '', 'INV627301'),
-(100, 'User', 'user@gmail.com', '8548034260', 'Personal', 'wish', 'n2.jpeg', '1 MONTH', '2000', 'CARD', '2023-07-05 09:42:57.349522', 31, '2023-08-05', 'Successful', 0, '', 'advertisement', '', 'INV492315'),
-(101, 'Charan', 'raicharan100@gmail.com', '1234567894', 'Personal', 'congratulations ', 'n1.jpeg', '1 MONTH', '2000', 'CARD', '2023-07-07 04:10:43.274527', 31, '2023-08-05', 'Successful', 166, '', 'advertisement', '', 'INV289437');
+
 
 -- --------------------------------------------------------
 
@@ -81,9 +78,8 @@ CREATE TABLE `articals` (
 -- Dumping data for table `articals`
 --
 
-INSERT INTO `articals` (`sno`, `name3`, `email3`, `number`, `title`, `artical`, `file`, `task_type`, `work_status`, `emp_id`) VALUES
-(40, 'User', 'user@gmail.com', '8548034260', 'hello', 'how are you', 'n1.jpeg', 'artical', '', 0),
-(41, 'Charan', 'raicharan100@gmail.com', '1234567894', 'hi', 'good', 'n3.jpeg', 'artical', 'Complete', 166);
+
+
 
 -- --------------------------------------------------------
 
@@ -106,14 +102,6 @@ CREATE TABLE `card_details` (
 -- Dumping data for table `card_details`
 --
 
-INSERT INTO `card_details` (`no`, `card_number`, `card_holder`, `expiration_month`, `expiration_year`, `cvv`, `created_at`, `invoice_number`) VALUES
-(61, '4545454545454554', 'Charan', 8, 2030, 123, '2023-06-23 04:39:56.977578', 'INV829289'),
-(62, '4545454545454554', 'Charan', 8, 2030, 123, '2023-06-23 04:44:38.916425', 'INV829289'),
-(63, '1234567891234567', 'Charan rai b s', 12, 2023, 123, '2023-06-23 06:00:37.549180', 'INV310073'),
-(64, '1452584596584526', 'User', 9, 2030, 123, '2023-07-05 09:27:54.164704', 'INV731782'),
-(65, '1111111112222222', 'user', 11, 2030, 123, '2023-07-05 09:42:01.313206', 'INV627301'),
-(66, '3333333656356356', 'user', 10, 2030, 123, '2023-07-05 09:42:57.347901', 'INV492315'),
-(67, '1245689563568565', 'Charan rai bs', 10, 2030, 154, '2023-07-05 09:47:48.704602', 'INV289437');
 
 -- --------------------------------------------------------
 
@@ -143,11 +131,6 @@ CREATE TABLE `employee` (
 -- Dumping data for table `employee`
 --
 
-INSERT INTO `employee` (`id`, `firstName`, `lastName`, `email`, `password`, `birthday`, `gender`, `contact`, `address`, `dept`, `degree`, `pic`, `code`, `otp_expiry`, `lday`) VALUES
-(126, 'admin', 'a', 'admin@gmail.com', 'Admin1234@', '2023-04-13', 'male', '8548034260', 'karkala', 'cs', 'admin', 'IMG_20230306_081422.jpg', '0', '2023-06-23 05:40:28', 0),
-(164, 'Rithish', 'Achar', 'rithish7353@gmail.com', 'Rithish123@', '2002-01-24', 'Male', '7829150482', 'Parapu', 'YOUTUBE STREAMER', 'employee', 'rithish.jpg', '', '2023-06-23 05:27:10', 0),
-(165, 'Purushotm', 'Shenoy', 'kpurushothamshenoy@gmail.com', 'Puru123@', '2002-07-26', 'Male', '9380555507', 'Bandimata', 'ARTICLE EDITOR', 'employee', 'purushotam.jpg', '', '2023-06-23 05:34:12', 0),
-(166, 'Prajwal', 'Kulal', 'kulalprajwal65@gmail.com', 'Pra8548@', '2002-10-19', 'Male', '8548034260', 'Jooduraste', 'ADVERTISER', 'employee', 'prajwal.jpg', '0', '2023-07-05 09:50:42', 0);
 
 -- --------------------------------------------------------
 
@@ -169,8 +152,6 @@ CREATE TABLE `employee_leaves` (
 -- Dumping data for table `employee_leaves`
 --
 
-INSERT INTO `employee_leaves` (`emp_id`, `emp_name`, `leave_reason`, `leave_start_date`, `leave_end_date`, `status`, `l_day`) VALUES
-(166, 'Prajwal', 'Fever', '2023-07-06', '2023-07-08', '', 0);
 
 -- --------------------------------------------------------
 
@@ -191,9 +172,7 @@ CREATE TABLE `poll` (
 -- Dumping data for table `poll`
 --
 
-INSERT INTO `poll` (`id`, `name`, `email`, `phone`, `feedback`, `suggestions`) VALUES
-(17, 'user', 'user@gmail.com', '8548034260', 'very nice\r\n', 'Excellent'),
-(18, 'user', 'user@gmail.com', '8548034260', 'nice', 'Excellent');
+
 
 -- --------------------------------------------------------
 
@@ -212,10 +191,7 @@ CREATE TABLE `salary` (
 -- Dumping data for table `salary`
 --
 
-INSERT INTO `salary` (`id`, `base`, `bonus`, `total`) VALUES
-(164, 30000, 0, 30000),
-(165, 25000, 0, 25000),
-(166, 30000, 0, 30000);
+
 
 -- --------------------------------------------------------
 
@@ -248,10 +224,6 @@ CREATE TABLE `task` (
 -- Dumping data for table `task`
 --
 
-INSERT INTO `task` (`task_id`, `sno`, `name1`, `email1`, `ev_date`, `ev_name`, `number`, `address`, `pincode`, `employee_number`, `employee_email`, `task_status`, `task_type`, `artical`, `title`, `file`, `remaining_days`, `payment_status`) VALUES
-(99, 41, 'Charan', 'raicharan100@gmail.com', '0000-00-00', '', '1234567894', '', 0, 166, '', '', 'artical', 'good', 'hi', 'n3.jpeg', 0, ''),
-(100, 68, 'Charan', 'raicharan100@gmail.com', '2023-07-16', 'Kambala', '1234567894', 'karkala', 456456, 166, '', '', '', '', '', '', 0, ''),
-(101, 101, 'Charan', 'raicharan100@gmail.com', '2023-08-05', '', '1234567894', '', 0, 166, '', '', 'advertisement', 'congratulations ', 'Personal', 'n1.jpeg', 31, 'Successful');
 
 -- --------------------------------------------------------
 
@@ -277,11 +249,7 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `firstName`, `address`, `email`, `password`, `degree`, `pic`, `code`, `otp_expiry`, `contact`, `lastName`) VALUES
-(7, 'Charan', 'renjala', 'raicharan100@gmail.com', 'Charan123@', 'user', 'IMG_20230211_211508.jpg', '0', '2023-05-27 04:55:34', '0', 'rai'),
-(15, 'Dixen', 'Renjala', 'dixenrodrigues2@gmail.com', 'Dixen123@', 'user', '', '', '2023-06-23 05:44:23', '', 'Jolvin'),
-(16, 'User', 'karkala', 'user@gmail.com', 'User123@', 'user', '', '', '2023-06-23 05:46:44', '', 'User'),
-(17, 'me', 'karkala', 'me@gmail.com', 'Pra8548@', 'user', '', '', '2023-07-05 09:49:49', '', 'me');
+
 
 -- --------------------------------------------------------
 
@@ -309,10 +277,7 @@ CREATE TABLE `youtube` (
 -- Dumping data for table `youtube`
 --
 
-INSERT INTO `youtube` (`sno`, `name1`, `email1`, `ev_date`, `ev_name`, `number`, `address`, `pincode`, `status`, `ev_status`, `work_status`, `employee_id`, `task_type`) VALUES
-(66, 'User', 'user@gmail.com', '2023-07-08', 'Dance', '8548034260', 'karkala', 123123, '', '', '', 0, 'youtube'),
-(67, 'User', 'user@gmail.com', '2023-07-15', 'Kola', '8548034261', 'karkala', 456456, '', '', '', 0, 'youtube'),
-(68, 'Charan', 'raicharan100@gmail.com', '2023-07-16', 'Kambala', '1234567894', 'karkala', 456456, '', '', 'Complete', 166, 'youtube');
+
 
 --
 -- Indexes for dumped tables
